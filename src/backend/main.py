@@ -29,9 +29,22 @@ def fetch_one_page_of_data_from_api(base_url, counter):
     print(f"Download failed with offset {counter}")
     sys.exit(0)
 
-def save_to_file(data):
-  with open("data.json", "a") as f:
-    json.dump(data, f)
+
+
+def save_to_file_start():
+    with open("data.json", "w", encoding="utf-8") as f:
+        f.write("[")
+
+def save_to_file_chunk(data, first=False):
+    with open("data.json", "a", encoding="utf-8") as f:
+        if not first:
+            f.write(",\n")
+        json.dump(data, f, ensure_ascii=False)
+
+def save_to_file_end():
+    with open("data.json", "a", encoding="utf-8") as f:
+        f.write("]")
+
 
 def main():
   limit=1000
@@ -49,14 +62,17 @@ def main():
 
   counter = 0
 
+  first = True
+  save_to_file_start()
   while counter <= max_rows:
       data = fetch_one_page_of_data_from_api(base_url, counter)
       if len(data)==0:
-        print("tulokset loppuivat")
-        break
-      save_to_file(data)
-      counter = counter+limit
-      print(counter)
+          break
+      for item in data:
+          save_to_file_chunk(item, first)
+          first = False
+      counter += limit
+  save_to_file_end()
 
 if __name__=="__main__":
   main()
