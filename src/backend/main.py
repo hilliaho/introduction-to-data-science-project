@@ -1,8 +1,5 @@
 import requests, time, sys, json
 
-
-
-
 def fetch_one_page_of_data_from_api(base_url, counter):
   retries = 0
   max_retries=3
