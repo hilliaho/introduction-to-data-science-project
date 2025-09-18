@@ -15,11 +15,46 @@ def fetch_one_page_of_data_from_api(base_url, counter):
       print(f"response length = {len(response)}")
       data = []
       for doc in response:
-        simple_doc = {
-          "hakukohde": doc["hakukohde"],
-          "kuntaHakukohde": doc["kuntaHakukohde"]
-        }
-        data.append(simple_doc)
+        if doc["tutkinnonAloitussykli"] == "III sykli":
+          continue
+        if doc["koulutuksenAlkamiskausi"] == "Syksy":
+          if not doc["valitutLkm"]:
+            doc["valitutLkm"] = 0
+          if not doc["kaikkiHakijatLkm"]:
+            doc["kaikkiHakijatLkm"] = 0
+          out = False
+          for degree in data:
+            if doc["hakukohde"] == degree["hakukohde"]:
+              degree["valitutLkm"] += doc["valitutLkm"]
+              degree["kaikkiHakijatLkm"] += doc["kaikkiHakijatLkm"]
+              if degree["kaikkiHakijatLkm"] == 0:
+                degree["prosentti"] = 0
+                out = True
+                continue
+              degree["prosentti"] = degree["valitutLkm"]/degree["kaikkiHakijatLkm"]
+              out = True
+              continue
+          if out:
+            out = False
+            continue
+          if doc["kaikkiHakijatLkm"] == 0:
+                continue
+          simple_doc = {
+            "hakukohde": doc["hakukohde"],
+            "korkeakoulu": doc["korkeakoulu"],
+            "kuntaHakukohde": doc["kuntaHakukohde"],
+            "maakuntaHakukohde": doc["maakuntaHakukohde"],
+            "tutkinnonAloitussykli": doc["tutkinnonAloitussykli"],
+            "koulutuksenAlkamiskausi": doc["koulutuksenAlkamiskausi"],
+            "koulutusalaTaso1": doc["koulutusalaTaso1"],
+            "koulutusalaTaso2": doc["koulutusalaTaso2"],
+            "koulutusalaTaso3": doc["koulutusalaTaso3"],
+            "koulutuksenKieli": doc["koulutuksenKieli"],
+            "valitutLkm": doc["valitutLkm"],
+            "kaikkiHakijatLkm": doc["kaikkiHakijatLkm"],
+            "prosentti": doc["valitutLkm"]/doc["kaikkiHakijatLkm"]
+          }
+          data.append(simple_doc)
       return data
     except ValueError:
       retries+=1
