@@ -15,7 +15,7 @@ def fetch_one_page_of_data_from_api(base_url, counter):
       print(f"response length = {len(response)}")
       data = []
       for doc in response:
-        if doc["tutkinnonAloitussykli"] == "III sykli":
+        if doc["tutkinnonAloitussykli"] != "I sykli":
           continue
         if doc["koulutuksenAlkamiskausi"] == "Syksy":
           if not doc["valitutLkm"]:
@@ -80,6 +80,18 @@ def save_to_file_end():
     with open("data.json", "a", encoding="utf-8") as f:
         f.write("]")
 
+def sort():
+  with open("data.json", "r") as f:
+      data = f.read()
+  data = json.loads(data)
+  sorted_data = sorted(data, key=lambda x: x["prosentti"], reverse=True)
+  with open("data.json", "w", encoding="utf-8") as f:
+    json.dump(sorted_data, f, ensure_ascii=False)
+
+
+  
+
+
 
 def main():
   limit=1000
@@ -108,6 +120,7 @@ def main():
           first = False
       counter += limit
   save_to_file_end()
+  sort()
 
 if __name__=="__main__":
   main()
