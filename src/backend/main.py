@@ -19,6 +19,8 @@ def fetch_one_page_of_data_from_api(base_url, counter, data):
             for doc in response:
                 if doc["tutkinnonAloitussykli"] != "I sykli":
                     continue
+                if doc["hakutapa"] == "Siirtohaku": #Siirtohaku nyt ainakin pois, mut rajataanko muita?
+                    continue
                 if doc["koulutuksenAlkamiskausi"] == "Syksy":
                     if not doc["valitutLkm"]:
                         doc["valitutLkm"] = 0
@@ -46,6 +48,7 @@ def fetch_one_page_of_data_from_api(base_url, counter, data):
                     simple_doc = {
                         "hakukohde": doc["hakukohde"],
                         "korkeakoulu": doc["korkeakoulu"],
+                        "hakutapa": doc["hakutapa"],
                         "kuntaHakukohde": doc["kuntaHakukohde"],
                         "maakuntaHakukohde": doc["maakuntaHakukohde"],
                         "tutkinnonAloitussykli": doc["tutkinnonAloitussykli"],
