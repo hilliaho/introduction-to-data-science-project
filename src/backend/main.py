@@ -108,6 +108,22 @@ def main():
         counter += limit
     save_to_file(data)
     sort()
+    hierarchy = {}
+    for doc in data:
+        taso1 = doc.get("koulutusalaTaso1")
+        taso2 = doc.get("koulutusalaTaso2")
+        taso3 = doc.get("koulutusalaTaso3")
+        if taso1 not in hierarchy and taso1 != "Tieto puuttuu":
+            hierarchy[taso1] = {}
+        if taso2 != "Tieto puuttuu" and taso2 not in hierarchy[taso1]:
+            hierarchy[taso1][taso2] = set()
+        if taso3 != "Tieto puuttuu":
+            hierarchy[taso1][taso2].add(taso3)
+    for taso1, subcats in hierarchy.items():
+        for taso2 in subcats:
+            hierarchy[taso1][taso2] = sorted(list(hierarchy[taso1][taso2]))
+    with open("hierarchy.json", "w", encoding="utf-8") as f:
+        json.dump(hierarchy, f, ensure_ascii=False, indent=2)
 
 
 if __name__ == "__main__":
