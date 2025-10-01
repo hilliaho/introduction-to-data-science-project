@@ -17,5 +17,18 @@ app.add_middleware(
 def get_data():
     with open("data.json", "r") as f:
         data = json.load(f)
-    print(data[0])    
     return data
+
+@app.get("/api/hierarchy")
+def get_hierarchy():
+    print("get hierarchy")
+    with open("hierarchy.json", "r") as f:
+        data = json.load(f)
+    return data
+
+@app.get("/api/regions")
+def get_regions():
+    with open("regions.json", "r") as f:
+        data = json.load(f)
+    return data
+

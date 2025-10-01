@@ -1,16 +1,29 @@
 import React, { useState, useEffect } from 'react'
-import yes from './assets/yes.png'
-import no from './assets/no.png'
 import "./App.css"
+import CardView from './components/CardView'
 
-function App() {
-  const [step, setStep] = useState("city")
-  const [userData, setUserData] = useState({})
-  const [backendData, setBackendData] = useState(null)   // <- tähän backendin data
-  const cityList = ["Tampere", "Turku", "Helsinki", "Oulu"]
-  const [cityIndex, setCityIndex] = useState(0)
+const App = () => {
+  const [step, setStep] = useState("swipe")
+  const [selectedRegions, setSelectedRegions] = useState([])
+  const [backendData, setBackendData] = useState(null)
+  const [regions, setRegions] = useState({})
+  const [hierarchy, setHierarchy] = useState({})
 
   useEffect(() => {
+    fetch("http://localhost:8000/api/regions")
+      .then((res) => res.json())
+      .then((data) => {
+        setRegions(Object.keys(data))
+        console.log("Haettu backendistä:", data)
+      })
+      .catch((err) => console.error("Virhe datan haussa:", err))
+    fetch("http://localhost:8000/api/hierarchy")
+      .then((res) => res.json())
+      .then((data) => {
+        setHierarchy(data)
+        console.log("Haettu backendistä:", data)
+      })
+      .catch((err) => console.error("Virhe datan haussa:", err))
     fetch("http://localhost:8000/api/data")
       .then((res) => res.json())
       .then((data) => {
@@ -20,25 +33,11 @@ function App() {
       .catch((err) => console.error("Virhe datan haussa:", err))
   }, [])
 
-  const handleSwipe = (action) => {
-    if (action === "like") {
-      setUserData((prev) => ({
-        ...prev,
-        cities: [...(prev.cities || []), cityList[cityIndex]],
-      }))
-    }
 
-    if (cityIndex === cityList.length - 1) {
-      setStep("interests")
-    } else {
-      setCityIndex(cityIndex + 1)
-    }
-  }
 
   const handleStartAgain = () => {
     setStep("city")
-    setCityIndex(0)
-    setUserData({})
+    setSelectedRegions([])
   }
 
   return (
@@ -47,19 +46,15 @@ function App() {
         <h1>Stunder</h1>
       </div>
 
-      {step === "city" &&
-        <div className='city-card'>
-          <h2>{cityList[cityIndex]}</h2>
-          <img src={yes} onClick={() => handleSwipe("like")} alt="like" />
-          <img src={no} onClick={() => handleSwipe("dislike")} alt="dislike" />
-        </div>}
-
+      {step === "swipe" &&
+        <CardView regions={regions} selectedRegions={selectedRegions} setSelectedRegions={setSelectedRegions} setStep={setStep} />}
+      
       {step === "interests" &&
         <div className='interests-list'>
           <h2>Kiinnostuksenkohteet</h2>
           <p>Kaupungit:</p>
-          {userData.cities?.map((city) => <li key={city}>{city}</li>)}
-
+          {selectedRegions?.map((region) => <li key={region}>{region}</li>)}
+          {hierarchy}
           <p>Backendistä haettu data:</p>
           <pre>{JSON.stringify(backendData, null, 2)}</pre>
 

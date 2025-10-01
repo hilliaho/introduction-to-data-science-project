@@ -1,4 +1,32 @@
 {
+  "Tekniikan alat": {
+    "Kone-, prosessi-, energia- ja sähkötekniikka": [
+      "Elektroniikka ja automatiikka",
+      "Kemian tekniikka ja prosessit",
+      "Kone-, energia- ja sähkötekniikka, monialaiset koulutusohjelmat",
+      "Mekaniikka ja metalliala",
+      "Moottoriajoneuvo-, laiva- ja lentokonetekniikka",
+      "Sähkö ja energia",
+      "Ympäristönsuojeluteknologia"
+    ],
+    "Arkkitehtuuri ja rakentaminen": [
+      "Arkkitehtuuri ja kaupunkisuunnittelu",
+      "Rakentaminen ja rakennussuunnittelu"
+    ],
+    "Materiaali- ja prosessitekniikka": [
+      "Tekstiilitekniikka (vaatteet, jalkineet ja nahkatuotteet)",
+      "Tuotanto- ja prosessitekniikka, monialaiset koulutusohjelmat"
+    ]
+  },
+  "Kauppa, hallinto ja oikeustieteet": {
+    "Kauppa ja hallinto": [
+      "Kauppa ja hallinto, monialaiset koulutusohjelmat",
+      "Kauppa ja hallinto, yleiset koulutusohjelmat"
+    ],
+    "Oikeustieteet": [
+      "Oikeustieteet"
+    ]
+  },
   "Humanistiset ja taidealat": {
     "Taidealat": [
       "Audiovisuaaliset tekniikat ja media",
@@ -25,38 +53,7 @@
       "Tietojenkäsittely- ja tietoliikenne ICT), monialaiset koulutusohjelmat "
     ]
   },
-  "Kauppa, hallinto ja oikeustieteet": {
-    "Kauppa ja hallinto": [
-      "Kauppa ja hallinto, monialaiset koulutusohjelmat",
-      "Kauppa ja hallinto, yleiset koulutusohjelmat"
-    ],
-    "Oikeustieteet": [
-      "Oikeustieteet"
-    ]
-  },
-  "Tekniikan alat": {
-    "Kone-, prosessi-, energia- ja sähkötekniikka": [
-      "Elektroniikka ja automatiikka",
-      "Kemian tekniikka ja prosessit",
-      "Kone-, energia- ja sähkötekniikka, monialaiset koulutusohjelmat",
-      "Mekaniikka ja metalliala",
-      "Moottoriajoneuvo-, laiva- ja lentokonetekniikka",
-      "Sähkö ja energia",
-      "Ympäristönsuojeluteknologia"
-    ],
-    "Arkkitehtuuri ja rakentaminen": [
-      "Arkkitehtuuri ja kaupunkisuunnittelu",
-      "Rakentaminen ja rakennussuunnittelu"
-    ],
-    "Materiaali- ja prosessitekniikka": [
-      "Tekstiilitekniikka (vaatteet, jalkineet ja nahkatuotteet)",
-      "Tuotanto- ja prosessitekniikka, monialaiset koulutusohjelmat"
-    ]
-  },
   "Terveys- ja hyvinvointialat": {
-    "Hyvinvointi": [
-      "Sosiaalityö ja -ohjaus"
-    ],
     "Terveys": [
       "Farmasia",
       "Hoitotyö",
@@ -65,6 +62,9 @@
       "Suun terveydenhuolto",
       "Terveys, monialaiset koulutusohjelmat",
       "Terveystekniikka, kuvantaminen ja bioanalytiikka"
+    ],
+    "Hyvinvointi": [
+      "Sosiaalityö ja -ohjaus"
     ]
   },
   "Kasvatusalat": {
@@ -90,39 +90,6 @@
       "Suojeluala"
     ]
   },
-  "Maa- ja metsätalousalat": {
-    "Maatalous": [
-      "Maa- ja metsätalousalat, monialaiset koulutusohjelmat",
-      "Puutarhanhoito",
-      "Viljan ja karjantuotanto"
-    ],
-    "Eläinlääketiede": [
-      "Eläinlääketiede"
-    ],
-    "Metsätalous": [
-      "Metsätalous"
-    ]
-  },
-  "Luonnontieteet": {
-    "Biologia ja biotieteet": [
-      "Biokemia",
-      "Biologia"
-    ],
-    "Fysikaaliset tieteet,kemia ja geotieteet": [
-      "Fysiikka",
-      "Geotieteet",
-      "Kemia"
-    ],
-    "Matematiikka ja tilastotiede": [
-      "Matematiikka"
-    ],
-    "Luonnontieteet, yleiset koulutusohjelmat": [
-      "Luonnontieteet, yleiset koulutusohjelmat"
-    ],
-    "Ympäristöalat": [
-      "Ympäristöalat, monialaiset koulutusohjelmat"
-    ]
-  },
   "Yhteiskunnalliset alat": {
     "Yhteiskuntatieteet": [
       "Kansantaloustiede",
@@ -135,6 +102,40 @@
     "Viestintä ja informaatiotieteet": [
       "Kirjasto- ja informaatiotieteet",
       "Viestintätieteet"
+    ]
+  },
+  "Luonnontieteet": {
+    "Biologia ja biotieteet": [
+      "Biokemia",
+      "Biologia"
+    ],
+    "Luonnontieteet, yleiset koulutusohjelmat": [
+      "Luonnontieteet, yleiset koulutusohjelmat"
+    ],
+    "Fysikaaliset tieteet,kemia ja geotieteet": [
+      "Fysiikka",
+      "Geotieteet",
+      "Kemia"
+    ],
+    "Matematiikka ja tilastotiede": [
+      "Matematiikka"
+    ],
+    "Ympäristöalat": [
+      "Ympäristöalat, monialaiset koulutusohjelmat"
+    ]
+  },
+  "Maa- ja metsätalousalat": {
+    "Metsätalous": [
+      "Metsänhoito, yleiset koulutusohjelmat",
+      "Metsätalous"
+    ],
+    "Eläinlääketiede": [
+      "Eläinlääketiede"
+    ],
+    "Maatalous": [
+      "Maa- ja metsätalousalat, monialaiset koulutusohjelmat",
+      "Puutarhanhoito",
+      "Viljan ja karjantuotanto"
     ]
   }
 }

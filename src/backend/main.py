@@ -1,4 +1,5 @@
 import requests, time, sys, json
+from utils import create_city_list
 
 
 def fetch_one_page_of_data_from_api(base_url, counter, data):
@@ -106,7 +107,7 @@ def main():
         if not fetch_one_page_of_data_from_api(base_url, counter, data):
             break
         counter += limit
-    save_to_file(data)
+        save_to_file(data)
     sort()
     hierarchy = {}
     for doc in data:
@@ -124,6 +125,7 @@ def main():
             hierarchy[taso1][taso2] = sorted(list(hierarchy[taso1][taso2]))
     with open("hierarchy.json", "w", encoding="utf-8") as f:
         json.dump(hierarchy, f, ensure_ascii=False, indent=2)
+    create_city_list()
 
 
 if __name__ == "__main__":
