@@ -7,15 +7,17 @@ const Card = ({regions, selectedRegions, setSelectedRegions, setStep}) => {
   console.log("regions: ", selectedRegions)
   const [i, setIndex] = useState(0)
 
+ 
   const handleSwipe = (action) => {
-    console.log(i)
-    console.log(regions.length)
     if (action === "like") {
-      setSelectedRegions(selectedRegions.concat(regions[i]))
+      setSelectedRegions([...selectedRegions, regions[i]])
     }
 
-    if (i === regions.length - 2) {
+    if (i === regions.length - 1) {
+      console.log("step")
       setStep("interests")
+      return null
+      
     } else {
       setIndex(i+1)
     }
