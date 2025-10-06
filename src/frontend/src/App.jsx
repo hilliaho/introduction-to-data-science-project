@@ -1,10 +1,13 @@
 import React, { useState, useEffect } from 'react'
 import "./App.css"
 import CardView from './components/CardView'
+import CheckboxView from './components/CheckboxView'
+import ResultView from './components/ResultView'
 
 const App = () => {
   const [step, setStep] = useState("swipe")
   const [selectedRegions, setSelectedRegions] = useState([])
+  const [selectedFields, setSelectedFields] = useState([])
   const [backendData, setBackendData] = useState(null)
   const [regions, setRegions] = useState({})
   const [hierarchy, setHierarchy] = useState({})
@@ -35,6 +38,7 @@ const App = () => {
 
 
 
+
   const handleStartAgain = () => {
     setStep("city")
     setSelectedRegions([])
@@ -50,6 +54,13 @@ const App = () => {
         <CardView regions={regions} selectedRegions={selectedRegions} setSelectedRegions={setSelectedRegions} setStep={setStep} />}
       
       {step === "interests" &&
+      <CheckboxView hierarchy={hierarchy} selectedFields={selectedFields} setSelectedFields={setSelectedFields} step={step} setStep={setStep}/>}
+
+      {step === "results" &&
+      <ResultView backendData={backendData} selectedRegions={selectedRegions} selectedFields={selectedFields}/>
+      }
+
+      {step === "data" &&
         <div className='interests-list'>
           <h2>Kiinnostuksenkohteet</h2>
           <p>Kaupungit:</p>
