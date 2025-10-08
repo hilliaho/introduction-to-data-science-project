@@ -5,13 +5,6 @@ const CheckboxView = ({ hierarchy, selectedFields, setSelectedFields, step, setS
   const [fieldNames, setFieldNames] = useState(Object.keys(hierarchy))
   const [level, setLevel] = useState(1)
 
-  useEffect(() => {
-    if (step === "results") {
-      console.log("Step vaihtui tuloksiin!")
-    }
-  }, [step])
-
-
   const getKeysOrValues = (value) => {
     if (Array.isArray(value)) {
       return value

@@ -1,11 +1,13 @@
 import Result from "./Result"
 
 const ResultView = ({ backendData, selectedRegions, selectedFields }) => {
+  console.log(backendData)
+  console.log(selectedFields)
+  console.log(selectedRegions)
+
   return (
     <div>
-      {backendData.filter(data => selectedRegions.includes(data["maakuntaHakukohde"]) && selectedFields.includes(data["koulutusalaTaso3"]))
-      }
-      {backendData.map(result => <Result result={result}/>)}
+      <p>results</p>
     </div>
   )
 }

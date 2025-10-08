@@ -16,7 +16,7 @@ const App = () => {
     fetch("http://localhost:8000/api/regions")
       .then((res) => res.json())
       .then((data) => {
-        setRegions(Object.keys(data))
+        setRegions(data)
         console.log("Haettu backendistä:", data)
       })
       .catch((err) => console.error("Virhe datan haussa:", err))
@@ -36,6 +36,9 @@ const App = () => {
       .catch((err) => console.error("Virhe datan haussa:", err))
   }, [])
 
+  useEffect(() => {
+    console.log("step muuttui:", step)
+  }, [step])
 
 
 
@@ -52,12 +55,12 @@ const App = () => {
 
       {step === "swipe" &&
         <CardView regions={regions} selectedRegions={selectedRegions} setSelectedRegions={setSelectedRegions} setStep={setStep} />}
-      
+
       {step === "interests" &&
-      <CheckboxView hierarchy={hierarchy} selectedFields={selectedFields} setSelectedFields={setSelectedFields} step={step} setStep={setStep}/>}
+        <CheckboxView hierarchy={hierarchy} selectedFields={selectedFields} setSelectedFields={setSelectedFields} step={step} setStep={setStep} />}
 
       {step === "results" &&
-      <ResultView backendData={backendData} selectedRegions={selectedRegions} selectedFields={selectedFields}/>
+        <ResultView backendData={backendData} selectedRegions={selectedRegions} selectedFields={selectedFields} />
       }
 
       {step === "data" &&
