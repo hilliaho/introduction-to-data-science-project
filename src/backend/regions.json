@@ -1,1 +1,42 @@
-{"Uusimaa": ["Helsinki", "Raasepori", "Espoo", "Porvoo", "Vantaa", "Lohja", "Hyvinkää", "Kauniainen"], "Pohjanmaa": ["Pietarsaari", "Vaasa"], "Varsinais-Suomi": ["Turku", "Salo"], "Lappi": ["Kemi", "Tornio", "Rovaniemi"], "Kymenlaakso": ["Kotka", "Kouvola"], "Pohjois-Savo": ["Kuopio", "Iisalmi", "Varkaus"], "Kainuu": ["Kajaani"], "Keski-Pohjanmaa": ["Kokkola"], "Kanta-Häme": ["Hämeenlinna", "Forssa", "Hattula", "Riihimäki", "Tammela"], "Etelä-Savo": ["Mikkeli", "Savonlinna", "Pieksämäki"], "Etelä-Pohjanmaa": ["Seinäjoki"], "Pohjois-Pohjanmaa": ["Oulu", "Ylivieska", "Oulainen"], "Pohjois-Karjala": ["Joensuu"], "Satakunta": ["Pori", "Rauma", "Kankaanpää", "Huittinen"], "Keski-Suomi": ["Jyväskylä", "Saarijärvi"], "Pirkanmaa": ["Tampere", "Valkeakoski"], "Etelä-Karjala": ["Lappeenranta"], "Päijät-Häme": ["Lahti", "Heinola"]}
+{
+  "Uusimaa": [
+    "Uusimaa"
+  ],
+  "Pohjanmaa": [
+    "Keski-Pohjanmaa",
+    "Pohjanmaa",
+    "Etelä-Pohjanmaa"
+  ],
+  "Kainuu": [
+    "Pohjois-Pohjanmaa",
+    "Kainuu"
+  ],
+  "Savo": [
+    "Etelä-Savo",
+    "Pohjois-Savo"
+  ],
+  "Satakunta": [
+    "Satakunta"
+  ],
+  "Häme": [
+    "Päijät-Häme",
+    "Kanta-Häme",
+    "Kymenlaakso"
+  ],
+  "Pirkanmaa": [
+    "Pirkanmaa"
+  ],
+  "Varsinais-Suomi": [
+    "Varsinais-Suomi"
+  ],
+  "Karjala": [
+    "Pohjois-Karjala",
+    "Etelä-Karjala"
+  ],
+  "Keski-Suomi": [
+    "Keski-Suomi"
+  ],
+  "Lappi": [
+    "Lappi"
+  ]
+}
