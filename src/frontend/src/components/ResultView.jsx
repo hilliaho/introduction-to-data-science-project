@@ -13,7 +13,8 @@ const ResultView = ({ backendData, selectedRegions, selectedFields }) => {
   } else {
     return (
       <div>
-        Valitsemillasi ehdoilla ei löytynyt tuloksia
+      <p> Oopsie! We could not find any results with these conditions. Please try again! </p>
+      <p> Hupsis! Emme löytäneet hakukohteita näillä ehdoilla. Kokeile uudestaan! </p>
       </div>
     )
   }

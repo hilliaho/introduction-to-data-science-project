@@ -2,6 +2,19 @@ import React, { useState, useEffect } from 'react'
 
 import yes from '../assets/yes.png'
 import no from '../assets/no.png'
+import Keskisuomi from '../assets/Keski-Suomi.png'
+import Häme from '../assets/Häme.png'
+import Kainuu from '../assets/Kainuu.png'
+import Karjala from '../assets/Karjala.png'
+import Lappi from '../assets/Lappi.png'
+import Pirkanmaa from '../assets/Pirkanmaa.png'
+import Pohjanmaa from '../assets/Pohjanmaa.png'
+import Satakunta from '../assets/Satakunta.png'
+import Savo from '../assets/Savo.png'
+import Uusimaa from '../assets/Uusimaa.png'
+import Varsinaissuomi from '../assets/Varsinais-Suomi.png'
+
+
 
 const Card = ({ regions, selectedRegions, setSelectedRegions, setStep }) => {
   console.log("selected regions: ", selectedRegions)
