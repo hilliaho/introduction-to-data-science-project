@@ -79,7 +79,7 @@ def save_to_file(data):
 
 
 def sort():
-    with open("data.json", "r") as f:
+    with open("data.json", "r", encoding="utf-8") as f:
         data = f.read()
     data = json.loads(data)
     sorted_data = sorted(data, key=lambda x: x["prosentti"], reverse=True)
