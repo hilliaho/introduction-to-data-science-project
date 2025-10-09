@@ -1,42 +1,86 @@
 {
-  "Uusimaa": [
-    "Uusimaa"
-  ],
-  "Pohjanmaa": [
-    "Keski-Pohjanmaa",
-    "Pohjanmaa",
-    "Etelä-Pohjanmaa"
-  ],
-  "Kainuu": [
-    "Pohjois-Pohjanmaa",
-    "Kainuu"
-  ],
-  "Savo": [
-    "Etelä-Savo",
-    "Pohjois-Savo"
-  ],
-  "Satakunta": [
-    "Satakunta"
-  ],
-  "Häme": [
-    "Päijät-Häme",
-    "Kanta-Häme",
-    "Kymenlaakso"
-  ],
-  "Pirkanmaa": [
-    "Pirkanmaa"
-  ],
-  "Varsinaissuomi": [
-    "Varsinais-Suomi"
-  ],
-  "Karjala": [
-    "Pohjois-Karjala",
-    "Etelä-Karjala"
-  ],
-  "Keskisuomi": [
-    "Keski-Suomi"
-  ],
-  "Lappi": [
-    "Lappi"
-  ]
+  "Fi": {
+    "Uusimaa": [
+      "Uusimaa"
+    ],
+    "Pohjanmaa": [
+      "Keski-Pohjanmaa",
+      "Pohjanmaa",
+      "Etelä-Pohjanmaa"
+    ],
+    "Kainuu": [
+      "Pohjois-Pohjanmaa",
+      "Kainuu"
+    ],
+    "Savo": [
+      "Etelä-Savo",
+      "Pohjois-Savo"
+    ],
+    "Satakunta": [
+      "Satakunta"
+    ],
+    "Häme": [
+      "Päijät-Häme",
+      "Kanta-Häme",
+      "Kymenlaakso"
+    ],
+    "Pirkanmaa": [
+      "Pirkanmaa"
+    ],
+    "Varsinaissuomi": [
+      "Varsinais-Suomi"
+    ],
+    "Karjala": [
+      "Pohjois-Karjala",
+      "Etelä-Karjala"
+    ],
+    "Keskisuomi": [
+      "Keski-Suomi"
+    ],
+    "Lappi": [
+      "Lappi"
+    ]
+  },
+  "En": {
+    "Uusimaa": [
+      "Uusimaa"
+    ],
+    "Pohjanmaa": [
+      "Keski-Pohjanmaa",
+      "Pohjanmaa",
+      "Etelä-Pohjanmaa"
+    ],
+    "Kainuu": [
+      "Pohjois-Pohjanmaa",
+      "Kainuu"
+    ],
+    "Savo": [
+      "Etelä-Savo",
+      "Pohjois-Savo"
+    ],
+    "Satakunta": [
+      "Satakunta"
+    ],
+    "Häme": [
+      "Päijät-Häme",
+      "Kanta-Häme",
+      "Kymenlaakso"
+    ],
+    "Pirkanmaa": [
+      "Pirkanmaa"
+    ],
+    "Varsinaissuomi": [
+      "Varsinais-Suomi"
+    ],
+    "Karjala": [
+      "Pohjois-Karjala",
+      "Etelä-Karjala"
+    ],
+    "Keskisuomi": [
+      "Keski-Suomi"
+    ],
+    "Lappi": [
+      "Lappi"
+    ]
+  }
 }
