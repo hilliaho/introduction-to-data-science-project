@@ -1,5 +1,4 @@
 import requests, time, sys, json
-from utils import create_city_list
 
 
 def fetch_one_page_of_data_from_api(base_url, counter, data):
@@ -20,7 +19,7 @@ def fetch_one_page_of_data_from_api(base_url, counter, data):
             for doc in response:
                 if doc["tutkinnonAloitussykli"] != "I sykli":
                     continue
-                if doc["hakutapa"] == "Siirtohaku": #Siirtohaku nyt ainakin pois, mut rajataanko muita?
+                if doc["hakutapa"] != "Yhteishaku":
                     continue
                 if doc["koulutuksenAlkamiskausi"] == "Syksy":
                     if not doc["valitutLkm"]:
@@ -79,7 +78,7 @@ def save_to_file(data):
 
 
 def sort():
-    with open("data.json", "r") as f:
+    with open("data.json", "r", encoding="utf-8") as f:
         data = f.read()
     data = json.loads(data)
     sorted_data = sorted(data, key=lambda x: x["prosentti"], reverse=True)
@@ -125,7 +124,6 @@ def main():
             hierarchy[taso1][taso2] = sorted(list(hierarchy[taso1][taso2]))
     with open("hierarchy.json", "w", encoding="utf-8") as f:
         json.dump(hierarchy, f, ensure_ascii=False, indent=2)
-    create_city_list()
 
 
 if __name__ == "__main__":

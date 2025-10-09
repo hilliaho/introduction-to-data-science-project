@@ -18,13 +18,9 @@
       "Tuotanto- ja prosessitekniikka, monialaiset koulutusohjelmat"
     ]
   },
-  "Kauppa, hallinto ja oikeustieteet": {
-    "Kauppa ja hallinto": [
-      "Kauppa ja hallinto, monialaiset koulutusohjelmat",
-      "Kauppa ja hallinto, yleiset koulutusohjelmat"
-    ],
-    "Oikeustieteet": [
-      "Oikeustieteet"
+  "Tietojenkäsittely ja tietoliikenne (ICT) ": {
+    "Tietojenkäsittely ja tietoliikenne (ICT)": [
+      "Tietojenkäsittely- ja tietoliikenne ICT), monialaiset koulutusohjelmat "
     ]
   },
   "Humanistiset ja taidealat": {
@@ -48,12 +44,19 @@
       "Uskonto ja teologia"
     ]
   },
-  "Tietojenkäsittely ja tietoliikenne (ICT) ": {
-    "Tietojenkäsittely ja tietoliikenne (ICT)": [
-      "Tietojenkäsittely- ja tietoliikenne ICT), monialaiset koulutusohjelmat "
+  "Kauppa, hallinto ja oikeustieteet": {
+    "Kauppa ja hallinto": [
+      "Kauppa ja hallinto, monialaiset koulutusohjelmat",
+      "Kauppa ja hallinto, yleiset koulutusohjelmat"
+    ],
+    "Oikeustieteet": [
+      "Oikeustieteet"
     ]
   },
   "Terveys- ja hyvinvointialat": {
+    "Hyvinvointi": [
+      "Sosiaalityö ja -ohjaus"
+    ],
     "Terveys": [
       "Farmasia",
       "Hoitotyö",
@@ -62,9 +65,6 @@
       "Suun terveydenhuolto",
       "Terveys, monialaiset koulutusohjelmat",
       "Terveystekniikka, kuvantaminen ja bioanalytiikka"
-    ],
-    "Hyvinvointi": [
-      "Sosiaalityö ja -ohjaus"
     ]
   },
   "Kasvatusalat": {
@@ -90,6 +90,26 @@
       "Suojeluala"
     ]
   },
+  "Luonnontieteet": {
+    "Fysikaaliset tieteet,kemia ja geotieteet": [
+      "Fysiikka",
+      "Geotieteet",
+      "Kemia"
+    ],
+    "Luonnontieteet, yleiset koulutusohjelmat": [
+      "Luonnontieteet, yleiset koulutusohjelmat"
+    ],
+    "Biologia ja biotieteet": [
+      "Biokemia",
+      "Biologia"
+    ],
+    "Matematiikka ja tilastotiede": [
+      "Matematiikka"
+    ],
+    "Ympäristöalat": [
+      "Ympäristöalat, monialaiset koulutusohjelmat"
+    ]
+  },
   "Yhteiskunnalliset alat": {
     "Yhteiskuntatieteet": [
       "Kansantaloustiede",
@@ -104,38 +124,18 @@
       "Viestintätieteet"
     ]
   },
-  "Luonnontieteet": {
-    "Biologia ja biotieteet": [
-      "Biokemia",
-      "Biologia"
-    ],
-    "Luonnontieteet, yleiset koulutusohjelmat": [
-      "Luonnontieteet, yleiset koulutusohjelmat"
-    ],
-    "Fysikaaliset tieteet,kemia ja geotieteet": [
-      "Fysiikka",
-      "Geotieteet",
-      "Kemia"
-    ],
-    "Matematiikka ja tilastotiede": [
-      "Matematiikka"
-    ],
-    "Ympäristöalat": [
-      "Ympäristöalat, monialaiset koulutusohjelmat"
-    ]
-  },
   "Maa- ja metsätalousalat": {
-    "Metsätalous": [
-      "Metsänhoito, yleiset koulutusohjelmat",
-      "Metsätalous"
-    ],
-    "Eläinlääketiede": [
-      "Eläinlääketiede"
-    ],
     "Maatalous": [
       "Maa- ja metsätalousalat, monialaiset koulutusohjelmat",
       "Puutarhanhoito",
       "Viljan ja karjantuotanto"
+    ],
+    "Eläinlääketiede": [
+      "Eläinlääketiede"
+    ],
+    "Metsätalous": [
+      "Metsänhoito, yleiset koulutusohjelmat",
+      "Metsätalous"
     ]
   }
 }
