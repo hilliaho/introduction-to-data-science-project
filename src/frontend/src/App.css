@@ -80,3 +80,7 @@ button {
   flex-direction: row;
 }
 
+.result {
+  margin-top: 4rem;
+}
+

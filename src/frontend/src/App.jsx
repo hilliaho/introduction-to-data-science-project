@@ -27,19 +27,27 @@ const App = () => {
         console.log("Haettu backendistä:", data)
       })
       .catch((err) => console.error("Virhe datan haussa:", err))
-    fetch("http://localhost:8000/api/data")
-      .then((res) => res.json())
-      .then((data) => {
-        setBackendData(data)
-        console.log("Haettu backendistä:", data)
-      })
-      .catch((err) => console.error("Virhe datan haussa:", err))
   }, [])
 
   useEffect(() => {
     console.log("step muuttui:", step)
   }, [step])
 
+  useEffect(() => {
+    if (step === "results" && selectedRegions.length && selectedFields.length) {
+      fetch("http://localhost:8000/api/results", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          regions: selectedRegions,
+          fields: selectedFields,
+        }),
+      })
+        .then((res) => res.json())
+        .then((data) => setBackendData(data))
+        .catch((err) => console.error("Virhe datan haussa:", err))
+    }
+  }, [step, selectedFields, selectedRegions])
 
 
   const handleStartAgain = () => {
