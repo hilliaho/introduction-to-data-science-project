@@ -45,23 +45,23 @@
     "Uusimaa": [
       "Uusimaa"
     ],
-    "Pohjanmaa": [
-      "Keski-Pohjanmaa",
-      "Pohjanmaa",
-      "Etelä-Pohjanmaa"
+    "Ostrobothnias - Pohjanmaat": [
+      "Central Ostrobothnia - Keski-Pohjanmaa",
+      "Ostrobothnia - Pohjanmaa",
+      "South Ostrobothnia - Etelä-Pohjanmaa"
     ],
-    "Kainuu": [
-      "Pohjois-Pohjanmaa",
+    "North Ostrobothnia and Kainuu - Pohjois-Pohjanmaa ja Kainuu": [
+      "North Ostrobothnia - Pohjois-Pohjanmaa",
       "Kainuu"
     ],
     "Savo": [
-      "Etelä-Savo",
-      "Pohjois-Savo"
+      "South Savo - Etelä-Savo",
+      "North Savo - Pohjois-Savo"
     ],
     "Satakunta": [
       "Satakunta"
     ],
-    "Häme": [
+    "Kymenlaakso, Kanta-Häme, Päijät-Häme": [
       "Päijät-Häme",
       "Kanta-Häme",
       "Kymenlaakso"
@@ -69,18 +69,18 @@
     "Pirkanmaa": [
       "Pirkanmaa"
     ],
-    "Varsinaissuomi": [
-      "Varsinais-Suomi"
+    "Southwest Finland - Varsinais-Suomi": [
+      "Southwest Finland - Varsinais-Suomi"
     ],
-    "Karjala": [
-      "Pohjois-Karjala",
-      "Etelä-Karjala"
+    "Karelia - Karjala": [
+      "North Karelia - Pohjois-Karjala",
+      "South Karelia - Etelä-Karjala"
     ],
-    "Keskisuomi": [
-      "Keski-Suomi"
+    "Central Finland - Keski-Suomi": [
+      "Central Finland - Keski-Suomi"
     ],
-    "Lappi": [
-      "Lappi"
+    "Lapland - Lappi": [
+      "Lapland - Lappi"
     ]
   }
 }
