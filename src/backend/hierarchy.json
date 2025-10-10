@@ -141,143 +141,143 @@
     }
   },
   "En": {
-    "Engineering, manufacturing and construction \n Tekniikan alat": {
-      "Engineering and engineering trades \n Kone-, prosessi-, energia- ja sähkötekniikka": [
-        "\n Elektroniikka ja automatiikka",
-        "\n Kemian tekniikka ja prosessit",
-        "\n Kone-, energia- ja sähkötekniikka, monialaiset koulutusohjelmat",
-        "\n Mekaniikka ja metalliala",
-        "\n Moottoriajoneuvo-, laiva- ja lentokonetekniikka",
-        "\n Sähkö ja energia",
-        "\n Ympäristönsuojeluteknologia"
+    "Engineering, manufacturing and construction <br> Tekniikan alat": {
+      "Engineering and engineering trades <br> Kone-, prosessi-, energia- ja sähkötekniikka": [
+        "Electronics and automation <br> Elektroniikka ja automatiikka",
+        "Chemical engineering and processes <br> Kemian tekniikka ja prosessit",
+        "Mechanical, energy and electrical engineering <br> Kone-, energia- ja sähkötekniikka",
+        "Mechanics and metal industry <br> Mekaniikka ja metalliala",
+        "Motor vehicle, ship and aircraft engineering <br> Moottoriajoneuvo-, laiva- ja lentokonetekniikka",
+        "Electricity and energy <br> Sähkö ja energia",
+        "Environmental protection technology <br> Ympäristönsuojeluteknologia"
       ],
-      "Architecture and construction \n Arkkitehtuuri ja rakentaminen": [
-        "\n Arkkitehtuuri ja kaupunkisuunnittelu",
-        "\n Rakentaminen ja rakennussuunnittelu"
+      "Architecture and construction <br> Arkkitehtuuri ja rakentaminen": [
+        "Architecture and urban planning <br> Arkkitehtuuri ja kaupunkisuunnittelu",
+        "Construction and building design <br> Rakentaminen ja rakennussuunnittelu"
       ],
-      "Manufacturing and processing \n Materiaali- ja prosessitekniikka": [
-        "\n Tekstiilitekniikka (vaatteet, jalkineet ja nahkatuotteet)",
-        "\n Tuotanto- ja prosessitekniikka, monialaiset koulutusohjelmat"
+      "Manufacturing and processing <br> Materiaali- ja prosessitekniikka": [
+        "Textile technology <br> Tekstiilitekniikka",
+        "Production and process technology <br> Tuotanto- ja prosessitekniikka"
       ]
     },
-    "Information and Communication Technologies (ICT) \n Tietojenkäsittely ja tietoliikenne (ICT)": {
-      "Information and Communication Technologies (ICT) \n Tietojenkäsittely ja tietoliikenne (ICT)": [
-        "Information and Communication Technologies (ICT) \n Tietojenkäsittely ja tietoliikenne (ICT)"
+    "Information and communication technologies (ICT) <br> Tietojenkäsittely ja tietoliikenne (ICT)": {
+      "Information and communication technologies (ICT) <br> Tietojenkäsittely ja tietoliikenne (ICT)": [
+        "Information and communication technologies (ICT) <br> Tietojenkäsittely ja tietoliikenne (ICT)"
       ]
     },
-    "Arts and humanities \n Humanistiset ja taidealat": {
-      "Arts \n Taidealat": [
-        "\n Audiovisuaaliset tekniikat ja media",
-        "\n Kuvataiteet",
-        "\n Käsityöalat",
-        "\n Muoti, sisustussunnittelu ja teollinen muotoilu",
-        "\n Musiikki ja esittävät taiteet",
-        "\n Taidealat, monialaiset koulutusohjelmat",
-        "\n Taidealat, yleiset koulutusohjelmat"
+    "Arts and humanities <br> Humanistiset ja taidealat": {
+      "Arts <br> Taidealat": [
+        "Audiovisual technologies and media <br> Audiovisuaaliset tekniikat ja media",
+        "Visual and fine arts <br> Kuvataiteet",
+        "Handicrafts <br> Käsityöalat",
+        "Fashion, interior design and industrial design <br> Muoti, sisustussunnittelu ja teollinen muotoilu",
+        "Music and performing arts <br> Musiikki ja esittävät taiteet",
+        "Multidisciplinary programmes involving arts <br> Taidealat, monialaiset koulutusohjelmat",
+        "Broad programmes involving arts <br> Taidealat, yleiset koulutusohjelmat"
       ],
-      "Languages \n Kielet": [
-        "\n Kielten opiskelu",
-        "\n Kirjallisuus ja kielitiede"
+      "Languages <br> Kielet": [
+        "Studying languages <br> Kielten opiskelu",
+        "Literature and linguistics <br> Kirjallisuus ja kielitiede"
       ],
-      "Humanities (except languages) \n Humanistiset alat (paitsi kielet)": [
-        "\n Filosofia ja etiikka",
-        "\n Historia ja arkeologia",
-        "\n Humanistiset alat (paitsi kielet)",
-        "\n Uskonto ja teologia"
+      "Humanities (except languages) <br> Humanistiset alat (paitsi kielet)": [
+        "Philosophy and ethics <br> Filosofia ja etiikka",
+        "History and archaeology <br> Historia ja arkeologia",
+        "Humanities (except languages) <br> Humanistiset alat (paitsi kielet)",
+        "Religion and theology <br> Uskonto ja teologia"
       ]
     },
-    "Business, administration and law \n Kauppa, hallinto ja oikeustieteet": {
-      "Business and administration \n Kauppa ja hallinto": [
-        "\n Kauppa ja hallinto, monialaiset koulutusohjelmat",
-        "\n Kauppa ja hallinto, yleiset koulutusohjelmat"
+    "Business, administration and law <br> Kauppa, hallinto ja oikeustieteet": {
+      "Business and administration <br> Kauppa ja hallinto": [
+        "Multidisciplinary programmes involving commerce and administration <br> Kauppa ja hallinto, monialaiset koulutusohjelmat",
+        "Broad programmes involving commerce and administration <br> Kauppa ja hallinto, yleiset koulutusohjelmat"
       ],
-      "Law \n Oikeustieteet": [
-        "\n Oikeustieteet"
+      "Law <br> Oikeustieteet": [
+        "Law <br> Oikeustieteet"
       ]
     },
-    "Health and welfare \n Terveys- ja hyvinvointialat": {
-      "Welfare \n Hyvinvointi": [
-        "\n Sosiaalityö ja -ohjaus"
+    "Health and welfare <br> Terveys- ja hyvinvointialat": {
+      "Welfare <br> Hyvinvointi": [
+        "Social work and guidance <br> Sosiaalityö ja -ohjaus"
       ],
-      "Health \n Terveys": [
-        "\n Farmasia",
-        "\n Hoitotyö",
-        "\n Kuntoutus",
-        "\n Lääketiede",
-        "\n Suun terveydenhuolto",
-        "\n Terveys, monialaiset koulutusohjelmat",
-        "\n Terveystekniikka, kuvantaminen ja bioanalytiikka"
+      "Health <br> Terveys": [
+        "Pharmacy <br> Farmasia",
+        "Care work <br> Hoitotyö",
+        "Rehabilitation <br> Kuntoutus",
+        "Medicine <br> Lääketiede",
+        "Oral health care <br> Suun terveydenhuolto",
+        "Health <br> Terveys",
+        "Health technology, imaging and bioanalytics <br> Terveystekniikka, kuvantaminen ja bioanalytiikka"
       ]
     },
-    "Education \n Kasvatusalat": {
-      "Education \n Kasvatusalat": [
-        "\n Aineenopettajien koulutus",
-        "\n Kasvatustieteet",
-        "\n Luokanopettajien koulutus",
-        "\n Varhaiskasvatuksen opettajien koulutus"
+    "Education <br> Kasvatusalat": {
+      "Education <br> Kasvatusalat": [
+        "Subject teacher training <br> Aineenopettajien koulutus",
+        "Educational sciences <br> Kasvatustieteet",
+        "Classroom teacher training <br> Luokanopettajien koulutus",
+        "Early childhood education teacher training <br> Varhaiskasvatuksen opettajien koulutus"
       ]
     },
-    "Services \n Palvelualat": {
-      "Personal services \n Henkilökohtaiset palvelut": [
-        "\n Hiusten ja kauneudenhoitopalvelut",
-        "\n Hotelli- ja ravintola-ala",
-        "\n Matkailu, turismi ja vapaa-aika",
-        "\n Urheilu ja liikunta"
+    "Services <br> Palvelualat": {
+      "Personal services <br> Henkilökohtaiset palvelut": [
+        "Hair and beauty services <br> Hiusten ja kauneudenhoitopalvelut",
+        "Hotel and restaurant industry <br> Hotelli- ja ravintola-ala",
+        "Travel, tourism and leisure <br> Matkailu, turismi ja vapaa-aika",
+        "Sports and exercise <br> Urheilu ja liikunta"
       ],
-      "Transport services \n Kuljetuspalvelut": [
-        "\n Kuljetuspalvelut"
+      "Transport services <br> Kuljetuspalvelut": [
+        "Transport services <br> Kuljetuspalvelut"
       ],
-      "Security services \n Turvallisuuspalvelut": [
-        "\n Sotilas- ja puolustusala",
-        "\n Suojeluala"
+      "Security services <br> Turvallisuuspalvelut": [
+        "Military and defense industry <br> Sotilas- ja puolustusala",
+        "Safety and security industry <br> Suojeluala"
       ]
     },
-    "Natural sciences, mathematics and statistics \n Luonnontieteet": {
-      "Physical sciences, chemistry and geosciences \n Fysikaaliset tieteet, kemia ja geotieteet": [
-        "\n Fysiikka",
-        "\n Geotieteet",
-        "\n Kemia"
+    "Natural sciences, mathematics and statistics <br> Luonnontieteet": {
+      "Physical sciences, chemistry and geosciences <br> Fysikaaliset tieteet, kemia ja geotieteet": [
+        "Physics <br> Fysiikka",
+        "Geosciences <br> Geotieteet",
+        "Chemistry <br> Kemia"
       ],
-      "Broad programmes involving natural sciences, mathematics and statistics \n Luonnontieteet, yleiset koulutusohjelmat": [
-        "\n Luonnontieteet, yleiset koulutusohjelmat"
+      "Broad programmes involving natural sciences, mathematics and statistics <br> Luonnontieteet, yleiset koulutusohjelmat": [
+        "Broad programmes involving natural sciences, mathematics and statistics <br> Luonnontieteet, yleiset koulutusohjelmat"
       ],
-      "Biological and related sciences \n Biologia ja biotieteet": [
-        "\n Biokemia",
-        "\n Biologia"
+      "Biological and related sciences <br> Biologia ja biotieteet": [
+        "Biochemistry <br> Biokemia",
+        "Biology <br> Biologia"
       ],
-      "Mathematics and statistics \n Matematiikka ja tilastotiede": [
-        "\n Matematiikka"
+      "Mathematics and statistics <br> Matematiikka ja tilastotiede": [
+        "Mathematics and statistics <br> Matematiikka ja tilastotiede"
       ],
-      "Environment \n Ympäristöalat": [
-        "\n Ympäristöalat, monialaiset koulutusohjelmat"
+      "Environment <br> Ympäristöalat": [
+        "Environment <br> Ympäristöalat"
       ]
     },
-    "\n Yhteiskunnalliset alat": {
-      "\n Yhteiskuntatieteet": [
-        "\n Kansantaloustiede",
-        "\n Psykologia",
-        "\n Sosiaali- ja käyttäytymistieteet, monialaiset koulutusohjelmat",
-        "\n Sosiaali- ja käyttäytymistieteet, yleiset koulutusohjelmat",
-        "\n Sosiaalitieteet",
-        "\n Valtiotieteet"
+    "Social sciences, journalism and information <br> Yhteiskunnalliset alat": {
+      "Social and behavioural sciences <br> Yhteiskuntatieteet": [
+        "Economics <br> Kansantaloustiede",
+        "Psychology <br> Psykologia",
+        "Multidisciplinary programmes involving social and behavioural sciences <br> Sosiaali- ja käyttäytymistieteet, monialaiset koulutusohjelmat",
+        "Broad programmes involving social and behavioural sciences <br> Sosiaali- ja käyttäytymistieteet, yleiset koulutusohjelmat",
+        "Social sciences <br> Sosiaalitieteet",
+        "Political sciences <br> Valtiotieteet"
       ],
-      "\n Viestintä ja informaatiotieteet": [
-        "\n Kirjasto- ja informaatiotieteet",
-        "\n Viestintätieteet"
+      "Journalism and information <br> Viestintä ja informaatiotieteet": [
+        "Library and information sciences <br> Kirjasto- ja informaatiotieteet",
+        "Communication sciences <br> Viestintätieteet"
       ]
     },
-    "\n Maa- ja metsätalousalat": {
-      "\n Maatalous": [
-        "\n Maa- ja metsätalousalat, monialaiset koulutusohjelmat",
-        "\n Puutarhanhoito",
-        "\n Viljan ja karjantuotanto"
+    "Agriculture, forestry and veterinary <br> Maa- ja metsätalousalat": {
+      "Agriculture <br> Maatalous": [
+        "Multidisciplinary programmes involving agriculture and forestry <br> Maa- ja metsätalousalat, monialaiset koulutusohjelmat",
+        "Gardening <br> Puutarhanhoito",
+        "Grain and livestock production <br> Viljan ja karjantuotanto"
       ],
-      "\n Eläinlääketiede": [
-        "\n Eläinlääketiede"
+      "Veterinary <br> Eläinlääketiede": [
+        "Veterinary <br> Eläinlääketiede"
       ],
-      "\n Metsätalous": [
-        "\n Metsänhoito, yleiset koulutusohjelmat",
-        "\n Metsätalous"
+      "Forestry <br> Metsätalous": [
+        "Silviculture <br> Metsänhoito",
+        "Forestry <br> Metsätalous"
       ]
     }
   }
