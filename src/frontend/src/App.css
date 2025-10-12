@@ -1,3 +1,7 @@
+#root {
+  width: 100%;
+}
+
 body {
   margin-top: 10rem;
   padding: 0;
@@ -5,7 +9,7 @@ body {
   background: linear-gradient(135deg, #f9fafb, #e5e7eb);
   color: #111827;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   min-height: 100vh;
 }
 
@@ -14,16 +18,37 @@ body {
 }
 
 .main {
-  max-width: 420px;
   width: 100%;
 }
 
 .city-card {
-  background: white;
-  border-radius: 1.5rem;
-  padding: 2rem 3rem;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
-  text-align: center;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.row {
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.card-bg-img {
+  width: 50rem;
+}
+
+.yesno-button {
+  width: 80px;
+  height: 80px;
+  margin: 0 1rem;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+  background: #f3f4f6;
+  padding: 0.75rem;
 }
 
 h1 {
@@ -40,18 +65,7 @@ h2 {
   color: #374151;
 }
 
-img {
-  width: 80px;
-  height: 80px;
-  margin: 0 1rem;
-  cursor: pointer;
-  border-radius: 50%;
-  transition: transform 0.1s ease, box-shadow 0.1s ease;
-  background: #f3f4f6;
-  padding: 0.75rem;
-}
-
-img:hover {
+.yesno-button:hover {
   box-shadow: 0 1px 16px #e09bd1;
 }
 
@@ -75,10 +89,21 @@ button {
   margin-top: 1rem;
 }
 
-.checkbox {
+.checkbox-row {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
+
+.checkbox-row input {
+  height: 1.4rem;
+  width: 1.4rem;
+}
+
+.checkbox-row p {
+  cursor: pointer;
+}
+
 
 .result {
   margin-top: 4rem;
