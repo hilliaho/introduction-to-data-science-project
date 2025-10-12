@@ -1,284 +1,696 @@
 {
-  "Fi": {
-    "Tekniikan alat": {
-      "Kone-, prosessi-, energia- ja sähkötekniikka": [
-        "Elektroniikka ja automatiikka",
-        "Kemian tekniikka ja prosessit",
-        "Kone-, energia- ja sähkötekniikka, monialaiset koulutusohjelmat",
-        "Mekaniikka ja metalliala",
-        "Moottoriajoneuvo-, laiva- ja lentokonetekniikka",
-        "Sähkö ja energia",
-        "Ympäristönsuojeluteknologia"
-      ],
-      "Arkkitehtuuri ja rakentaminen": [
-        "Arkkitehtuuri ja kaupunkisuunnittelu",
-        "Rakentaminen ja rakennussuunnittelu"
-      ],
-      "Materiaali- ja prosessitekniikka": [
-        "Tekstiilitekniikka (vaatteet, jalkineet ja nahkatuotteet)",
-        "Tuotanto- ja prosessitekniikka, monialaiset koulutusohjelmat"
-      ]
+  "Tekniikan alat": {
+    "name": {
+      "en": "Engineering, manufacturing and construction",
+      "fi": "Tekniikan alat"
     },
-    "Tietojenkäsittely ja tietoliikenne (ICT) ": {
-      "Tietojenkäsittely ja tietoliikenne (ICT)": [
-        "Tietojenkäsittely- ja tietoliikenne ICT), monialaiset koulutusohjelmat "
-      ]
-    },
-    "Humanistiset ja taidealat": {
-      "Taidealat": [
-        "Audiovisuaaliset tekniikat ja media",
-        "Kuvataiteet",
-        "Käsityöalat",
-        "Muoti, sisustussunnittelu ja teollinen muotoilu",
-        "Musiikki ja esittävät taiteet",
-        "Taidealat, monialaiset koulutusohjelmat",
-        "Taidealat, yleiset koulutusohjelmat"
-      ],
-      "Kielet": [
-        "Kielten opiskelu",
-        "Kirjallisuus ja kielitiede"
-      ],
-      "Humanistiset alat (paitsi kielet)": [
-        "Filosofia ja etiikka",
-        "Historia ja arkeologia",
-        "Humanistiset alat (paitsi kielet)",
-        "Uskonto ja teologia"
-      ]
-    },
-    "Kauppa, hallinto ja oikeustieteet": {
-      "Kauppa ja hallinto": [
-        "Kauppa ja hallinto, monialaiset koulutusohjelmat",
-        "Kauppa ja hallinto, yleiset koulutusohjelmat"
-      ],
-      "Oikeustieteet": [
-        "Oikeustieteet"
-      ]
-    },
-    "Terveys- ja hyvinvointialat": {
-      "Hyvinvointi": [
-        "Sosiaalityö ja -ohjaus"
-      ],
-      "Terveys": [
-        "Farmasia",
-        "Hoitotyö",
-        "Kuntoutus",
-        "Lääketiede",
-        "Suun terveydenhuolto",
-        "Terveys, monialaiset koulutusohjelmat",
-        "Terveystekniikka, kuvantaminen ja bioanalytiikka"
-      ]
-    },
-    "Kasvatusalat": {
-      "Kasvatusalat": [
-        "Aineenopettajien koulutus",
-        "Kasvatustieteet",
-        "Luokanopettajien koulutus",
-        "Varhaiskasvatuksen opettajien koulutus"
-      ]
-    },
-    "Palvelualat": {
-      "Henkilökohtaiset palvelut": [
-        "Hiusten ja kauneudenhoitopalvelut",
-        "Hotelli- ja ravintola-ala",
-        "Matkailu, turismi ja vapaa-aika",
-        "Urheilu ja liikunta"
-      ],
-      "Kuljetuspalvelut": [
-        "Kuljetuspalvelut"
-      ],
-      "Turvallisuuspalvelut": [
-        "Sotilas- ja puolustusala",
-        "Suojeluala"
-      ]
-    },
-    "Luonnontieteet": {
-      "Fysikaaliset tieteet,kemia ja geotieteet": [
-        "Fysiikka",
-        "Geotieteet",
-        "Kemia"
-      ],
-      "Luonnontieteet, yleiset koulutusohjelmat": [
-        "Luonnontieteet, yleiset koulutusohjelmat"
-      ],
-      "Biologia ja biotieteet": [
-        "Biokemia",
-        "Biologia"
-      ],
-      "Matematiikka ja tilastotiede": [
-        "Matematiikka"
-      ],
-      "Ympäristöalat": [
-        "Ympäristöalat, monialaiset koulutusohjelmat"
-      ]
-    },
-    "Yhteiskunnalliset alat": {
-      "Yhteiskuntatieteet": [
-        "Kansantaloustiede",
-        "Psykologia",
-        "Sosiaali- ja käyttäytymistieteet, monialaiset koulutusohjelmat",
-        "Sosiaali- ja käyttäytymistieteet, yleiset koulutusohjelmat",
-        "Sosiaalitieteet",
-        "Valtiotieteet"
-      ],
-      "Viestintä ja informaatiotieteet": [
-        "Kirjasto- ja informaatiotieteet",
-        "Viestintätieteet"
-      ]
-    },
-    "Maa- ja metsätalousalat": {
-      "Maatalous": [
-        "Maa- ja metsätalousalat, monialaiset koulutusohjelmat",
-        "Puutarhanhoito",
-        "Viljan ja karjantuotanto"
-      ],
-      "Eläinlääketiede": [
-        "Eläinlääketiede"
-      ],
-      "Metsätalous": [
-        "Metsänhoito, yleiset koulutusohjelmat",
-        "Metsätalous"
-      ]
+    "children": {
+      "Kone-, prosessi-, energia- ja sähkötekniikka": {
+        "name": {
+          "en": "Engineering and engineering trades",
+          "fi": "Kone-, prosessi-, energia- ja sähkötekniikka"
+        },
+        "children": {
+          "Elektroniikka ja automatiikka": {
+            "name": {
+              "en": "Electronics and automation",
+              "fi": "Elektroniikka ja automatiikka"
+            }
+          },
+          "Kemian tekniikka ja prosessit": {
+            "name": {
+              "en": "Chemical engineering and processes",
+              "fi": "Kemian tekniikka ja prosessit"
+            }
+          },
+          "Kone-, energia- ja sähkötekniikka": {
+            "name": {
+              "en": "Mechanical, energy and electrical engineering",
+              "fi": "Kone-, energia- ja sähkötekniikka"
+            }
+          },
+          "Mekaniikka ja metalliala": {
+            "name": {
+              "en": "Mechanics and metal industry",
+              "fi": "Mekaniikka ja metalliala"
+            }
+          },
+          "Moottoriajoneuvo-, laiva- ja lentokonetekniikka": {
+            "name": {
+              "en": "Motor vehicle, ship and aircraft engineering",
+              "fi": "Moottoriajoneuvo-, laiva- ja lentokonetekniikka"
+            }
+          },
+          "Sähkö ja energia": {
+            "name": {
+              "en": "Electricity and energy",
+              "fi": "Sähkö ja energia"
+            }
+          },
+          "Ympäristönsuojeluteknologia": {
+            "name": {
+              "en": "Environmental protection technology",
+              "fi": "Ympäristönsuojeluteknologia"
+            }
+          }
+        }
+      },
+      "Arkkitehtuuri ja rakentaminen": {
+        "name": {
+          "en": "Architecture and construction",
+          "fi": "Arkkitehtuuri ja rakentaminen"
+        },
+        "children": {
+          "Arkkitehtuuri ja kaupunkisuunnittelu": {
+            "name": {
+              "en": "Architecture and urban planning",
+              "fi": "Arkkitehtuuri ja kaupunkisuunnittelu"
+            }
+          },
+          "Rakentaminen ja rakennussuunnittelu": {
+            "name": {
+              "en": "Construction and building design",
+              "fi": "Rakentaminen ja rakennussuunnittelu"
+            }
+          }
+        }
+      },
+      "Materiaali- ja prosessitekniikka": {
+        "name": {
+          "en": "Manufacturing and processing",
+          "fi": "Materiaali- ja prosessitekniikka"
+        },
+        "children": {
+          "Tekstiilitekniikka": {
+            "name": {
+              "en": "Textile technology",
+              "fi": "Tekstiilitekniikka"
+            }
+          },
+          "Tuotanto- ja prosessitekniikka": {
+            "name": {
+              "en": "Production and process technology",
+              "fi": "Tuotanto- ja prosessitekniikka"
+            }
+          }
+        }
+      }
     }
   },
-  "En": {
-    "Engineering, manufacturing and construction <br> Tekniikan alat": {
-      "Engineering and engineering trades <br> Kone-, prosessi-, energia- ja sähkötekniikka": [
-        "Electronics and automation <br> Elektroniikka ja automatiikka",
-        "Chemical engineering and processes <br> Kemian tekniikka ja prosessit",
-        "Mechanical, energy and electrical engineering <br> Kone-, energia- ja sähkötekniikka",
-        "Mechanics and metal industry <br> Mekaniikka ja metalliala",
-        "Motor vehicle, ship and aircraft engineering <br> Moottoriajoneuvo-, laiva- ja lentokonetekniikka",
-        "Electricity and energy <br> Sähkö ja energia",
-        "Environmental protection technology <br> Ympäristönsuojeluteknologia"
-      ],
-      "Architecture and construction <br> Arkkitehtuuri ja rakentaminen": [
-        "Architecture and urban planning <br> Arkkitehtuuri ja kaupunkisuunnittelu",
-        "Construction and building design <br> Rakentaminen ja rakennussuunnittelu"
-      ],
-      "Manufacturing and processing <br> Materiaali- ja prosessitekniikka": [
-        "Textile technology <br> Tekstiilitekniikka",
-        "Production and process technology <br> Tuotanto- ja prosessitekniikka"
-      ]
+  "Tietojenkäsittely ja tietoliikenne (ICT)": {
+    "name": {
+      "en": "Information and communication technologies (ICT)",
+      "fi": "Tietojenkäsittely ja tietoliikenne (ICT)"
     },
-    "Information and communication technologies (ICT) <br> Tietojenkäsittely ja tietoliikenne (ICT)": {
-      "Information and communication technologies (ICT) <br> Tietojenkäsittely ja tietoliikenne (ICT)": [
-        "Information and communication technologies (ICT) <br> Tietojenkäsittely ja tietoliikenne (ICT)"
-      ]
+    "children": {
+      "Tietojenkäsittely ja tietoliikenne (ICT)": {
+        "name": {
+          "en": "Information and communication technologies (ICT)",
+          "fi": "Tietojenkäsittely ja tietoliikenne (ICT)"
+        },
+        "children": {
+          "Tietojenkäsittely ja tietoliikenne (ICT)": {
+            "name": {
+              "en": "Information and communication technologies (ICT)",
+              "fi": "Tietojenkäsittely ja tietoliikenne (ICT)"
+            }
+          }
+        }
+      }
+    }
+  },
+  "Humanistiset ja taidealat": {
+    "name": {
+      "en": "Arts and humanities",
+      "fi": "Humanistiset ja taidealat"
     },
-    "Arts and humanities <br> Humanistiset ja taidealat": {
-      "Arts <br> Taidealat": [
-        "Audiovisual technologies and media <br> Audiovisuaaliset tekniikat ja media",
-        "Visual and fine arts <br> Kuvataiteet",
-        "Handicrafts <br> Käsityöalat",
-        "Fashion, interior design and industrial design <br> Muoti, sisustussunnittelu ja teollinen muotoilu",
-        "Music and performing arts <br> Musiikki ja esittävät taiteet",
-        "Multidisciplinary programmes involving arts <br> Taidealat, monialaiset koulutusohjelmat",
-        "Broad programmes involving arts <br> Taidealat, yleiset koulutusohjelmat"
-      ],
-      "Languages <br> Kielet": [
-        "Studying languages <br> Kielten opiskelu",
-        "Literature and linguistics <br> Kirjallisuus ja kielitiede"
-      ],
-      "Humanities (except languages) <br> Humanistiset alat (paitsi kielet)": [
-        "Philosophy and ethics <br> Filosofia ja etiikka",
-        "History and archaeology <br> Historia ja arkeologia",
-        "Humanities (except languages) <br> Humanistiset alat (paitsi kielet)",
-        "Religion and theology <br> Uskonto ja teologia"
-      ]
+    "children": {
+      "Taidealat": {
+        "name": {
+          "en": "Arts",
+          "fi": "Taidealat"
+        },
+        "children": {
+          "Audiovisuaaliset tekniikat ja media": {
+            "name": {
+              "en": "Audiovisual technologies and media",
+              "fi": "Audiovisuaaliset tekniikat ja media"
+            }
+          },
+          "Kuvataiteet": {
+            "name": {
+              "en": "Visual and fine arts",
+              "fi": "Kuvataiteet"
+            }
+          },
+          "Käsityöalat": {
+            "name": {
+              "en": "Handicrafts",
+              "fi": "Käsityöalat"
+            }
+          },
+          "Muoti, sisustussunnittelu ja teollinen muotoilu": {
+            "name": {
+              "en": "Fashion, interior design and industrial design",
+              "fi": "Muoti, sisustussunnittelu ja teollinen muotoilu"
+            }
+          },
+          "Musiikki ja esittävät taiteet": {
+            "name": {
+              "en": "Music and performing arts",
+              "fi": "Musiikki ja esittävät taiteet"
+            }
+          },
+          "Taidealat, monialaiset koulutusohjelmat": {
+            "name": {
+              "en": "Multidisciplinary programmes involving arts",
+              "fi": "Taidealat, monialaiset koulutusohjelmat"
+            }
+          },
+          "Taidealat, yleiset koulutusohjelmat": {
+            "name": {
+              "en": "Broad programmes involving arts",
+              "fi": "Taidealat, yleiset koulutusohjelmat"
+            }
+          }
+        }
+      },
+      "Kielet": {
+        "name": {
+          "en": "Languages",
+          "fi": "Kielet"
+        },
+        "children": {
+          "Kielten opiskelu": {
+            "name": {
+              "en": "Studying languages",
+              "fi": "Kielten opiskelu"
+            }
+          },
+          "Kirjallisuus ja kielitiede": {
+            "name": {
+              "en": "Literature and linguistics",
+              "fi": "Kirjallisuus ja kielitiede"
+            }
+          }
+        }
+      },
+      "Humanistiset alat (paitsi kielet)": {
+        "name": {
+          "en": "Humanities (except languages)",
+          "fi": "Humanistiset alat (paitsi kielet)"
+        },
+        "children": {
+          "Filosofia ja etiikka": {
+            "name": {
+              "en": "Philosophy and ethics",
+              "fi": "Filosofia ja etiikka"
+            }
+          },
+          "Historia ja arkeologia": {
+            "name": {
+              "en": "History and archaeology",
+              "fi": "Historia ja arkeologia"
+            }
+          },
+          "Humanistiset alat (paitsi kielet)": {
+            "name": {
+              "en": "Humanities (except languages)",
+              "fi": "Humanistiset alat (paitsi kielet)"
+            }
+          },
+          "Uskonto ja teologia": {
+            "name": {
+              "en": "Religion and theology",
+              "fi": "Uskonto ja teologia"
+            }
+          }
+        }
+      }
+    }
+  },
+  "Kauppa, hallinto ja oikeustieteet": {
+    "name": {
+      "en": "Business, administration and law",
+      "fi": "Kauppa, hallinto ja oikeustieteet"
     },
-    "Business, administration and law <br> Kauppa, hallinto ja oikeustieteet": {
-      "Business and administration <br> Kauppa ja hallinto": [
-        "Multidisciplinary programmes involving commerce and administration <br> Kauppa ja hallinto, monialaiset koulutusohjelmat",
-        "Broad programmes involving commerce and administration <br> Kauppa ja hallinto, yleiset koulutusohjelmat"
-      ],
-      "Law <br> Oikeustieteet": [
-        "Law <br> Oikeustieteet"
-      ]
+    "children": {
+      "Kauppa ja hallinto": {
+        "name": {
+          "en": "Business and administration",
+          "fi": "Kauppa ja hallinto"
+        },
+        "children": {
+          "Kauppa ja hallinto, monialaiset koulutusohjelmat": {
+            "name": {
+              "en": "Multidisciplinary programmes involving commerce and administration",
+              "fi": "Kauppa ja hallinto, monialaiset koulutusohjelmat"
+            }
+          },
+          "Kauppa ja hallinto, yleiset koulutusohjelmat": {
+            "name": {
+              "en": "Broad programmes involving commerce and administration",
+              "fi": "Kauppa ja hallinto, yleiset koulutusohjelmat"
+            }
+          }
+        }
+      },
+      "Oikeustieteet": {
+        "name": {
+          "en": "Law",
+          "fi": "Oikeustieteet"
+        },
+        "children": {
+          "Oikeustieteet": {
+            "name": {
+              "en": "Law",
+              "fi": "Oikeustieteet"
+            }
+          }
+        }
+      }
+    }
+  },
+  "Terveys- ja hyvinvointialat": {
+    "name": {
+      "en": "Health and welfare",
+      "fi": "Terveys- ja hyvinvointialat"
     },
-    "Health and welfare <br> Terveys- ja hyvinvointialat": {
-      "Welfare <br> Hyvinvointi": [
-        "Social work and guidance <br> Sosiaalityö ja -ohjaus"
-      ],
-      "Health <br> Terveys": [
-        "Pharmacy <br> Farmasia",
-        "Care work <br> Hoitotyö",
-        "Rehabilitation <br> Kuntoutus",
-        "Medicine <br> Lääketiede",
-        "Oral health care <br> Suun terveydenhuolto",
-        "Health <br> Terveys",
-        "Health technology, imaging and bioanalytics <br> Terveystekniikka, kuvantaminen ja bioanalytiikka"
-      ]
+    "children": {
+      "Hyvinvointi": {
+        "name": {
+          "en": "Welfare",
+          "fi": "Hyvinvointi"
+        },
+        "children": {
+          "Sosiaalityö ja -ohjaus": {
+            "name": {
+              "en": "Social work and guidance",
+              "fi": "Sosiaalityö ja -ohjaus"
+            }
+          }
+        }
+      },
+      "Terveys": {
+        "name": {
+          "en": "Health",
+          "fi": "Terveys"
+        },
+        "children": {
+          "Farmasia": {
+            "name": {
+              "en": "Pharmacy",
+              "fi": "Farmasia"
+            }
+          },
+          "Hoitotyö": {
+            "name": {
+              "en": "Care work",
+              "fi": "Hoitotyö"
+            }
+          },
+          "Kuntoutus": {
+            "name": {
+              "en": "Rehabilitation",
+              "fi": "Kuntoutus"
+            }
+          },
+          "Lääketiede": {
+            "name": {
+              "en": "Medicine",
+              "fi": "Lääketiede"
+            }
+          },
+          "Suun terveydenhuolto": {
+            "name": {
+              "en": "Oral health care",
+              "fi": "Suun terveydenhuolto"
+            }
+          },
+          "Terveys": {
+            "name": {
+              "en": "Health",
+              "fi": "Terveys"
+            }
+          },
+          "Terveystekniikka, kuvantaminen ja bioanalytiikka": {
+            "name": {
+              "en": "Health technology, imaging and bioanalytics",
+              "fi": "Terveystekniikka, kuvantaminen ja bioanalytiikka"
+            }
+          }
+        }
+      }
+    }
+  },
+  "Kasvatusalat": {
+    "name": {
+      "en": "Education",
+      "fi": "Kasvatusalat"
     },
-    "Education <br> Kasvatusalat": {
-      "Education <br> Kasvatusalat": [
-        "Subject teacher training <br> Aineenopettajien koulutus",
-        "Educational sciences <br> Kasvatustieteet",
-        "Classroom teacher training <br> Luokanopettajien koulutus",
-        "Early childhood education teacher training <br> Varhaiskasvatuksen opettajien koulutus"
-      ]
+    "children": {
+      "Kasvatusalat": {
+        "name": {
+          "en": "Education",
+          "fi": "Kasvatusalat"
+        },
+        "children": {
+          "Aineenopettajien koulutus": {
+            "name": {
+              "en": "Subject teacher training",
+              "fi": "Aineenopettajien koulutus"
+            }
+          },
+          "Kasvatustieteet": {
+            "name": {
+              "en": "Educational sciences",
+              "fi": "Kasvatustieteet"
+            }
+          },
+          "Luokanopettajien koulutus": {
+            "name": {
+              "en": "Classroom teacher training",
+              "fi": "Luokanopettajien koulutus"
+            }
+          },
+          "Varhaiskasvatuksen opettajien koulutus": {
+            "name": {
+              "en": "Early childhood education teacher training",
+              "fi": "Varhaiskasvatuksen opettajien koulutus"
+            }
+          }
+        }
+      }
+    }
+  },
+  "Palvelualat": {
+    "name": {
+      "en": "Services",
+      "fi": "Palvelualat"
     },
-    "Services <br> Palvelualat": {
-      "Personal services <br> Henkilökohtaiset palvelut": [
-        "Hair and beauty services <br> Hiusten ja kauneudenhoitopalvelut",
-        "Hotel and restaurant industry <br> Hotelli- ja ravintola-ala",
-        "Travel, tourism and leisure <br> Matkailu, turismi ja vapaa-aika",
-        "Sports and exercise <br> Urheilu ja liikunta"
-      ],
-      "Transport services <br> Kuljetuspalvelut": [
-        "Transport services <br> Kuljetuspalvelut"
-      ],
-      "Security services <br> Turvallisuuspalvelut": [
-        "Military and defense industry <br> Sotilas- ja puolustusala",
-        "Safety and security industry <br> Suojeluala"
-      ]
+    "children": {
+      "Henkilökohtaiset palvelut": {
+        "name": {
+          "en": "Personal services",
+          "fi": "Henkilökohtaiset palvelut"
+        },
+        "children": {
+          "Hiusten ja kauneudenhoitopalvelut": {
+            "name": {
+              "en": "Hair and beauty services",
+              "fi": "Hiusten ja kauneudenhoitopalvelut"
+            }
+          },
+          "Hotelli- ja ravintola-ala": {
+            "name": {
+              "en": "Hotel and restaurant industry",
+              "fi": "Hotelli- ja ravintola-ala"
+            }
+          },
+          "Matkailu, turismi ja vapaa-aika": {
+            "name": {
+              "en": "Travel, tourism and leisure",
+              "fi": "Matkailu, turismi ja vapaa-aika"
+            }
+          },
+          "Urheilu ja liikunta": {
+            "name": {
+              "en": "Sports and exercise",
+              "fi": "Urheilu ja liikunta"
+            }
+          }
+        }
+      },
+      "Kuljetuspalvelut": {
+        "name": {
+          "en": "Transport services",
+          "fi": "Kuljetuspalvelut"
+        },
+        "children": {
+          "Kuljetuspalvelut": {
+            "name": {
+              "en": "Transport services",
+              "fi": "Kuljetuspalvelut"
+            }
+          }
+        }
+      },
+      "Turvallisuuspalvelut": {
+        "name": {
+          "en": "Security services",
+          "fi": "Turvallisuuspalvelut"
+        },
+        "children": {
+          "Sotilas- ja puolustusala": {
+            "name": {
+              "en": "Military and defense industry",
+              "fi": "Sotilas- ja puolustusala"
+            }
+          },
+          "Suojeluala": {
+            "name": {
+              "en": "Safety and security industry",
+              "fi": "Suojeluala"
+            }
+          }
+        }
+      }
+    }
+  },
+  "Luonnontieteet": {
+    "name": {
+      "en": "Natural sciences, mathematics and statistics",
+      "fi": "Luonnontieteet"
     },
-    "Natural sciences, mathematics and statistics <br> Luonnontieteet": {
-      "Physical sciences, chemistry and geosciences <br> Fysikaaliset tieteet, kemia ja geotieteet": [
-        "Physics <br> Fysiikka",
-        "Geosciences <br> Geotieteet",
-        "Chemistry <br> Kemia"
-      ],
-      "Broad programmes involving natural sciences, mathematics and statistics <br> Luonnontieteet, yleiset koulutusohjelmat": [
-        "Broad programmes involving natural sciences, mathematics and statistics <br> Luonnontieteet, yleiset koulutusohjelmat"
-      ],
-      "Biological and related sciences <br> Biologia ja biotieteet": [
-        "Biochemistry <br> Biokemia",
-        "Biology <br> Biologia"
-      ],
-      "Mathematics and statistics <br> Matematiikka ja tilastotiede": [
-        "Mathematics and statistics <br> Matematiikka ja tilastotiede"
-      ],
-      "Environment <br> Ympäristöalat": [
-        "Environment <br> Ympäristöalat"
-      ]
+    "children": {
+      "Fysikaaliset tieteet, kemia ja geotieteet": {
+        "name": {
+          "en": "Physical sciences, chemistry and geosciences",
+          "fi": "Fysikaaliset tieteet, kemia ja geotieteet"
+        },
+        "children": {
+          "Fysiikka": {
+            "name": {
+              "en": "Physics",
+              "fi": "Fysiikka"
+            }
+          },
+          "Geotieteet": {
+            "name": {
+              "en": "Geosciences",
+              "fi": "Geotieteet"
+            }
+          },
+          "Kemia": {
+            "name": {
+              "en": "Chemistry",
+              "fi": "Kemia"
+            }
+          }
+        }
+      },
+      "Luonnontieteet, yleiset koulutusohjelmat": {
+        "name": {
+          "en": "Broad programmes involving natural sciences, mathematics and statistics",
+          "fi": "Luonnontieteet, yleiset koulutusohjelmat"
+        },
+        "children": {
+          "Luonnontieteet, yleiset koulutusohjelmat": {
+            "name": {
+              "en": "Broad programmes involving natural sciences, mathematics and statistics",
+              "fi": "Luonnontieteet, yleiset koulutusohjelmat"
+            }
+          }
+        }
+      },
+      "Biologia ja biotieteet": {
+        "name": {
+          "en": "Biological and related sciences",
+          "fi": "Biologia ja biotieteet"
+        },
+        "children": {
+          "Biokemia": {
+            "name": {
+              "en": "Biochemistry",
+              "fi": "Biokemia"
+            }
+          },
+          "Biologia": {
+            "name": {
+              "en": "Biology",
+              "fi": "Biologia"
+            }
+          }
+        }
+      },
+      "Matematiikka ja tilastotiede": {
+        "name": {
+          "en": "Mathematics and statistics",
+          "fi": "Matematiikka ja tilastotiede"
+        },
+        "children": {
+          "Matematiikka ja tilastotiede": {
+            "name": {
+              "en": "Mathematics and statistics",
+              "fi": "Matematiikka ja tilastotiede"
+            }
+          }
+        }
+      },
+      "Ympäristöalat": {
+        "name": {
+          "en": "Environment",
+          "fi": "Ympäristöalat"
+        },
+        "children": {
+          "Ympäristöalat": {
+            "name": {
+              "en": "Environment",
+              "fi": "Ympäristöalat"
+            }
+          }
+        }
+      }
+    }
+  },
+  "Yhteiskunnalliset alat": {
+    "name": {
+      "en": "Social sciences, journalism and information",
+      "fi": "Yhteiskunnalliset alat"
     },
-    "Social sciences, journalism and information <br> Yhteiskunnalliset alat": {
-      "Social and behavioural sciences <br> Yhteiskuntatieteet": [
-        "Economics <br> Kansantaloustiede",
-        "Psychology <br> Psykologia",
-        "Multidisciplinary programmes involving social and behavioural sciences <br> Sosiaali- ja käyttäytymistieteet, monialaiset koulutusohjelmat",
-        "Broad programmes involving social and behavioural sciences <br> Sosiaali- ja käyttäytymistieteet, yleiset koulutusohjelmat",
-        "Social sciences <br> Sosiaalitieteet",
-        "Political sciences <br> Valtiotieteet"
-      ],
-      "Journalism and information <br> Viestintä ja informaatiotieteet": [
-        "Library and information sciences <br> Kirjasto- ja informaatiotieteet",
-        "Communication sciences <br> Viestintätieteet"
-      ]
+    "children": {
+      "Yhteiskuntatieteet": {
+        "name": {
+          "en": "Social and behavioural sciences",
+          "fi": "Yhteiskuntatieteet"
+        },
+        "children": {
+          "Kansantaloustiede": {
+            "name": {
+              "en": "Economics",
+              "fi": "Kansantaloustiede"
+            }
+          },
+          "Psykologia": {
+            "name": {
+              "en": "Psychology",
+              "fi": "Psykologia"
+            }
+          },
+          "Sosiaali- ja käyttäytymistieteet, monialaiset koulutusohjelmat": {
+            "name": {
+              "en": "Multidisciplinary programmes involving social and behavioural sciences",
+              "fi": "Sosiaali- ja käyttäytymistieteet, monialaiset koulutusohjelmat"
+            }
+          },
+          "Sosiaali- ja käyttäytymistieteet, yleiset koulutusohjelmat": {
+            "name": {
+              "en": "Broad programmes involving social and behavioural sciences",
+              "fi": "Sosiaali- ja käyttäytymistieteet, yleiset koulutusohjelmat"
+            }
+          },
+          "Sosiaalitieteet": {
+            "name": {
+              "en": "Social sciences",
+              "fi": "Sosiaalitieteet"
+            }
+          },
+          "Valtiotieteet": {
+            "name": {
+              "en": "Political sciences",
+              "fi": "Valtiotieteet"
+            }
+          }
+        }
+      },
+      "Viestintä ja informaatiotieteet": {
+        "name": {
+          "en": "Journalism and information",
+          "fi": "Viestintä ja informaatiotieteet"
+        },
+        "children": {
+          "Kirjasto- ja informaatiotieteet": {
+            "name": {
+              "en": "Library and information sciences",
+              "fi": "Kirjasto- ja informaatiotieteet"
+            }
+          },
+          "Viestintätieteet": {
+            "name": {
+              "en": "Communication sciences",
+              "fi": "Viestintätieteet"
+            }
+          }
+        }
+      }
+    }
+  },
+  "Maa- ja metsätalousalat": {
+    "name": {
+      "en": "Agriculture, forestry and veterinary",
+      "fi": "Maa- ja metsätalousalat"
     },
-    "Agriculture, forestry and veterinary <br> Maa- ja metsätalousalat": {
-      "Agriculture <br> Maatalous": [
-        "Multidisciplinary programmes involving agriculture and forestry <br> Maa- ja metsätalousalat, monialaiset koulutusohjelmat",
-        "Gardening <br> Puutarhanhoito",
-        "Grain and livestock production <br> Viljan ja karjantuotanto"
-      ],
-      "Veterinary <br> Eläinlääketiede": [
-        "Veterinary <br> Eläinlääketiede"
-      ],
-      "Forestry <br> Metsätalous": [
-        "Silviculture <br> Metsänhoito",
-        "Forestry <br> Metsätalous"
-      ]
+    "children": {
+      "Maatalous": {
+        "name": {
+          "en": "Agriculture",
+          "fi": "Maatalous"
+        },
+        "children": {
+          "Maa- ja metsätalousalat, monialaiset koulutusohjelmat": {
+            "name": {
+              "en": "Multidisciplinary programmes involving agriculture and forestry",
+              "fi": "Maa- ja metsätalousalat, monialaiset koulutusohjelmat"
+            }
+          },
+          "Puutarhanhoito": {
+            "name": {
+              "en": "Gardening",
+              "fi": "Puutarhanhoito"
+            }
+          },
+          "Viljan ja karjantuotanto": {
+            "name": {
+              "en": "Grain and livestock production",
+              "fi": "Viljan ja karjantuotanto"
+            }
+          }
+        }
+      },
+      "Eläinlääketiede": {
+        "name": {
+          "en": "Veterinary",
+          "fi": "Eläinlääketiede"
+        },
+        "children": {
+          "Eläinlääketiede": {
+            "name": {
+              "en": "Veterinary",
+              "fi": "Eläinlääketiede"
+            }
+          }
+        }
+      },
+      "Metsätalous": {
+        "name": {
+          "en": "Forestry",
+          "fi": "Metsätalous"
+        },
+        "children": {
+          "Metsänhoito": {
+            "name": {
+              "en": "Silviculture",
+              "fi": "Metsänhoito"
+            }
+          },
+          "Metsätalous": {
+            "name": {
+              "en": "Forestry",
+              "fi": "Metsätalous"
+            }
+          }
+        }
+      }
     }
   }
 }
