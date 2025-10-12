@@ -19,6 +19,7 @@ import Varsinaissuomi from '../assets/Varsinais-Suomi.png'
 const Card = ({ regions, selectedRegions, setSelectedRegions, setStep }) => {
   const regionNames = Object.keys(regions)
   const [i, setIndex] = useState(0)
+  const images = { "Keskisuomi": Keskisuomi, "Häme": Häme, "Kainuu": Kainuu, "Karjala": Karjala, "Lappi": Lappi, "Pirkanmaa": Pirkanmaa, "Pohjanmaa": Pohjanmaa, "Satakunta": Satakunta, "Savo": Savo, "Uusimaa": Uusimaa, "Varsinaissuomi": Varsinaissuomi }
 
 
   useEffect(() => {
@@ -45,10 +46,12 @@ const Card = ({ regions, selectedRegions, setSelectedRegions, setStep }) => {
   }
 
   return (
-    <div className="card">
-      <h2>{regionNames[i]}</h2>
-      <img src={yes} onClick={() => handleSwipe("like")} alt="like" />
-      <img src={no} onClick={() => handleSwipe("dislike")} alt="dislike" />
+    <div className="city-card">
+      <img className='card-bg-img' src={images[regionNames[i]]} />
+      <div className='row'>
+        <img className='yesno-button' src={yes} onClick={() => handleSwipe("like")} alt="like" />
+        <img className='yesno-button' src={no} onClick={() => handleSwipe("dislike")} alt="dislike" />
+      </div>
     </div>
   )
 }
