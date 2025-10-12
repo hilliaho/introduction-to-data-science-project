@@ -17,7 +17,6 @@ import Varsinaissuomi from '../assets/Varsinais-Suomi.png'
 
 
 const Card = ({ regions, selectedRegions, setSelectedRegions, setStep }) => {
-  console.log("selected regions: ", selectedRegions)
   const regionNames = Object.keys(regions)
   const [i, setIndex] = useState(0)
 
@@ -30,16 +29,14 @@ const Card = ({ regions, selectedRegions, setSelectedRegions, setStep }) => {
 
 
   const handleSwipe = (action) => {
-    console.log("regionNames[i]:", regionNames[i])
     if (action === "like") {
       let new_regions = regions[regionNames[i]]
-      console.log("new regions:", new_regions)
       new_regions.forEach(region => setSelectedRegions(prev => [...prev, region]))
     }
 
     if (i === regions.length - 1) {
-      console.log("step")
       setStep("interests")
+      console.log("selected regions: ", selectedRegions)
       return null
 
     } else {

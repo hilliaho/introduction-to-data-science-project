@@ -24,17 +24,16 @@ const App = () => {
       .then((res) => res.json())
       .then((data) => {
         setHierarchy(data)
-        console.log("Haettu backendistä:", data)
+        console.log("hierarchy:", data)
       })
       .catch((err) => console.error("Virhe datan haussa:", err))
   }, [])
 
-  useEffect(() => {
-    console.log("step muuttui:", step)
-  }, [step])
+
 
   useEffect(() => {
     if (step === "results" && selectedRegions.length && selectedFields.length) {
+      console.log("selected fields:", selectedFields)
       fetch("http://localhost:8000/api/results", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
