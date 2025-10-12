@@ -16,8 +16,8 @@ const App = () => {
     fetch("http://localhost:8000/api/regions")
       .then((res) => res.json())
       .then((data) => {
-        setRegions(data)
-        console.log("Haettu backendistä:", data)
+        setRegions(data["Fi"])
+        console.log("regions:", data)
       })
       .catch((err) => console.error("Virhe datan haussa:", err))
     fetch("http://localhost:8000/api/hierarchy")

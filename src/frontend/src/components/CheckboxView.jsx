@@ -1,52 +1,50 @@
-import React, { useState, useEffect } from "react"
+import React, { useState } from "react"
 import CheckboxLine from "./CheckboxLine"
 
-const CheckboxView = ({ hierarchy, selectedFields, setSelectedFields, step, setStep }) => {
-  const [fieldNames, setFieldNames] = useState(Object.keys(hierarchy))
+const CheckboxView = ({ hierarchy, selectedFields, setSelectedFields, setStep}) => {
+  const [currentNodes, setCurrentNodes] = useState(Object.values(hierarchy))
   const [level, setLevel] = useState(1)
 
-  const getKeysOrValues = (value) => {
-    if (Array.isArray(value)) {
-      return value
-    } else if (typeof value === "object" && value !== null) {
-      return Object.keys(value)
-    } else {
-      return []
-    }
-  }
-
-
   const nextLevel = () => {
-    if (level === 1) {
-      const newFieldNames = selectedFields.flatMap(n => Object.keys(hierarchy[n] || {}))
-      setFieldNames(newFieldNames)
-      setSelectedFields([])
-      setLevel(2)
-    } else if (level === 2) {
-      const newFieldNames = selectedFields.flatMap(n =>
-        Object.values(hierarchy)
-          .flatMap(h => getKeysOrValues(h[n]))
-      )
-      setFieldNames(newFieldNames)
-      setSelectedFields([])
-      setLevel(3)
-    }
-    else if (level === 3) {
+    if (level === 1 || level === 2) {
+      const nextNodes = selectedFields
+        .map(sel => {
+          const node = currentNodes.find(n => n.name["fi"] === sel)
+          return node?.children ? Object.values(node.children) : []
+        })
+        .flat()
+
+      if (nextNodes.length > 0) {
+        setCurrentNodes(nextNodes)
+        setSelectedFields([])
+        setLevel(level + 1)
+      } else {
+        setStep("results")
+      }
+    } else if (level === 3) {
       setStep("results")
     }
   }
 
   return (
-    <div>
-      {fieldNames.map(key => (
+    <div className="checkbox-view">
+      {currentNodes.map((node, idx) => (
         <CheckboxLine
-          key={`${level}-${key}`}
-          field={{ name: key, selected: false }}
+          key={`${level}-${idx}`}
+          field={{
+            enName: node.name["en"],
+            fiName: node.name["fi"],
+            selected: selectedFields.includes(node.name["en"]),
+          }}
           selectedFields={selectedFields}
           setSelectedFields={setSelectedFields}
         />
       ))}
-      <button onClick={nextLevel}>Next</button>
+      <button
+        onClick={nextLevel}
+      >
+        Next
+      </button>
     </div>
   )
 }
