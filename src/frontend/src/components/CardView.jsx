@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react'
 import yes from '../assets/yes.png'
 import no from '../assets/no.png'
 import Keskisuomi from '../assets/Keski-Suomi.png'
-import Häme from '../assets/Häme.png'
+import Hame from '../assets/Hame.png'
 import Kainuu from '../assets/Kainuu.png'
 import Karjala from '../assets/Karjala.png'
 import Lappi from '../assets/Lappi.png'
@@ -19,7 +19,7 @@ import Varsinaissuomi from '../assets/Varsinais-Suomi.png'
 const Card = ({ regions, selectedRegions, setSelectedRegions, setStep }) => {
   const regionNames = Object.keys(regions)
   const [i, setIndex] = useState(0)
-  const images = { "Keskisuomi": Keskisuomi, "Häme": Häme, "Kainuu": Kainuu, "Karjala": Karjala, "Lappi": Lappi, "Pirkanmaa": Pirkanmaa, "Pohjanmaa": Pohjanmaa, "Satakunta": Satakunta, "Savo": Savo, "Uusimaa": Uusimaa, "Varsinaissuomi": Varsinaissuomi }
+  const images = { "Keskisuomi": Keskisuomi, "Hame": Hame, "Kainuu": Kainuu, "Karjala": Karjala, "Lappi": Lappi, "Pirkanmaa": Pirkanmaa, "Pohjanmaa": Pohjanmaa, "Satakunta": Satakunta, "Savo": Savo, "Uusimaa": Uusimaa, "Varsinaissuomi": Varsinaissuomi }
 
 
   useEffect(() => {
