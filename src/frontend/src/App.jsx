@@ -3,6 +3,7 @@ import "./App.css"
 import CardView from './components/CardView'
 import CheckboxView from './components/CheckboxView'
 import ResultView from './components/ResultView'
+import logo from './assets/logo.png'
 
 const App = () => {
   const [step, setStep] = useState("swipe")
@@ -57,7 +58,7 @@ const App = () => {
   return (
     <div className='main'>
       <div className='header-container'>
-        <h1>Stunder</h1>
+        <img src = {logo}/> 
       </div>
 
       {step === "swipe" &&
