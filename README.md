@@ -23,4 +23,4 @@ cd src/frontend
 npm install
 npm start
 ```
-The frontend should be available at http://localhost:3000
+The frontend should be available at http://localhost:5173/
