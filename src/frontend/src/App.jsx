@@ -15,15 +15,17 @@ const App = () => {
   const [hierarchy, setHierarchy] = useState({})
   const [loading, setLoading] = useState(false)
 
+  const API_URL = "https://backend-falling-wildflower-4306.fly.dev"
+
   useEffect(() => {
-    fetch("http://localhost:8000/api/regions")
+    fetch(`${API_URL}/api/regions`)
       .then((res) => res.json())
       .then((data) => {
         setRegions(data["Fi"])
         console.log("regions:", data)
       })
       .catch((err) => console.error("Virhe datan haussa:", err))
-    fetch("http://localhost:8000/api/hierarchy")
+    fetch(`${API_URL}/api/hierarchy`)
       .then((res) => res.json())
       .then((data) => {
         setHierarchy(data)
@@ -56,7 +58,7 @@ const App = () => {
       setLoading(true)
       console.log("selected fields:", selectedFields)
       let fields = findApiNames()
-      fetch("http://localhost:8000/api/results", {
+      fetch(`${API_URL}/api/results`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

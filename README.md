@@ -1,15 +1,26 @@
 # introduction-to-data-science-project
 
-## Käynnistäminen
+https://frontend-icy-dawn-6025.fly.dev/
 
-kansiossa backend/
-uvicorn app:app --reload
+## Running locally
 
-kansiossa frontend/
-npm run dev
+### Clone the repository:
+```bash
+git clone git@github.com:hilliaho/introduction-to-data-science-project.git
+```
 
+### Run the backend
+```bash
+cd src/backend
+poetry install
+poetry run uvicorn app:app --host 0.0.0.0 --port 8080
+```
 
-## Värit
-
-Teksti (tumma): #900E39
-Tausta (vaalea): #FBDBFF
+### Run the frontend
+In another terminal:
+```bash
+cd src/frontend
+npm install
+npm start
+```
+The frontend should be available at http://localhost:3000
